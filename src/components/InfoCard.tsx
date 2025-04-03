@@ -8,21 +8,25 @@ const InfoCard = ({ item }: any) => {
     <>
       <div
         className="cursor-pointer border border-dashed border-gray-300 rounded-lg p-4 hover:shadow-md transition"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          item.details !== "" && setIsOpen(!isOpen);
+        }}
       >
         <div className="flex justify-between items-center">
           <div>
             <h3 className="font-semibold text-lg">{item.title}</h3>
-            <p className="text-sm text-gray-600">{item.company}</p>
+            <p className="text-sm text-gray-600">{item.subtitle}</p>
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-sm text-gray-500">{item.date}</span>
-            <motion.div
-              animate={{ rotate: isOpen ? 90 : 0 }}
-              transition={{ duration: 0.25 }}
-            >
-              <ChevronRight />
-            </motion.div>
+            {item.details !== "" && (
+              <motion.div
+                animate={{ rotate: isOpen ? 90 : 0 }}
+                transition={{ duration: 0.25 }}
+              >
+                <ChevronRight />
+              </motion.div>
+            )}
           </div>
         </div>
 

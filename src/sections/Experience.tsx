@@ -4,14 +4,14 @@ import InfoCard from "../components/InfoCard";
 const experienceData = [
   {
     title: "Software Developer",
-    company: "Freelance",
+    subtitle: "Freelance",
     date: "Present",
     details:
       "Currently working with a small business client to design and develop a custom mobile ordering app. I’m focused on delivering a clean and intuitive user experience while collaborating directly with the business owner to align features with real-world needs. The app is built using React Native with Expo, and leverages Supabase for authentication and data, Square for payments, and TypeScript for type safety and scalability.",
   },
   {
     title: "Software Developer – Team Lead",
-    company: "Engage",
+    subtitle: "Engage",
     date: "Sep 2021 – Mar 2023",
     details:
       "During my time at Engage, I was responsible for delivering full-cycle software solutions, working closely with both clients and senior leadership to ensure each product aligned with business goals. I took ownership of projects from planning through deployment, regularly collaborating across teams to refine features, provide accurate estimates, and adapt to shifting requirements. I helped onboard new team members and created thorough technical documentation covering implementation details, third-party services, and setup requirements. As a team lead, I facilitated regular working sessions, set strategic agendas, and encouraged open collaboration. I also advocated for Agile practices on newer projects, focusing on iterative development and client feedback to continuously improve outcomes.",
