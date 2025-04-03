@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Globe, Mail, MapPin, Smartphone } from "lucide-react";
 
 const Sidebar = () => {
   return (
@@ -18,14 +19,26 @@ const Sidebar = () => {
             <span className="h-3 w-3 bg-green-500 rounded-full"></span>
             <span className="text-sm">Available for work</span>
           </div>
-          <p>📍 Mascoutah, IL</p>
+          <div className="flex gap-2">
+            <MapPin />
+            <p>Mascoutah, IL</p>
+          </div>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-md space-y-4">
           <div className="text-sm space-y-1">
-            <p>🌐 Timothyupchurch.com</p>
-            <p>📱 (618) 210-6687</p>
-            <p>✉️ timmyupc@gmail.com</p>
+            <div className="flex gap-2">
+              <Globe />
+              <p>Timothyupchurch.com</p>
+            </div>
+            <div className="flex gap-2">
+              <Smartphone />
+              <p>(618) 210-6687</p>
+            </div>
+            <div className="flex gap-2">
+              <Mail />
+              <p>timmyupc@gmail.com</p>
+            </div>
           </div>
 
           <div className="space-y-2">

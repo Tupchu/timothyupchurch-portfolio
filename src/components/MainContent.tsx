@@ -1,4 +1,5 @@
 import About from "../sections/About";
+import Experience from "../sections/Experience";
 import Skills from "../sections/Skills";
 
 const MainContent = () => {
@@ -6,6 +7,7 @@ const MainContent = () => {
     <div className="space-y-2">
       <About />
       <Skills />
+      <Experience />
     </div>
   );
 };
