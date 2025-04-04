@@ -68,7 +68,7 @@ const ProjectCard = ({
               href={sourceCode}
               target="_blank"
               rel="noreferrer"
-              className="underline underline-offset-8 decoration-gray-300 hover:decoration-gray-400 transition-all duration-300"
+              className="hover:text-gray-400 transition-all duration-300"
             >
               GitHub
             </a>
