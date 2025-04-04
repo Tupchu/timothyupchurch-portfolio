@@ -10,8 +10,9 @@ const Sidebar = () => {
       transition={{ duration: 0.8, delay: 0.2 }}
       viewport={{ once: true }}
     >
-      <div className="grid gap-4 lg:grid-cols-1">
-        <div className="bg-white p-6 rounded-xl shadow-md space-y-4">
+      <div className="grid gap-4 lg:grid-cols-1 md:max-lg:flex">
+        {/* profile card */}
+        <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1">
           <h1 className="text-2xl font-bold">Hello, I’m Timothy</h1>
           <p className="text-sm text-gray-600">Front-End Developer</p>
 
@@ -25,7 +26,8 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow-md space-y-4">
+        {/* contact card */}
+        <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1">
           <div className="text-sm space-y-1">
             <div className="flex gap-2">
               <Globe />

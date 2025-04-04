@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import InfoCard from "../components/InfoCard";
+import { TInfoCard } from "../types";
 
-const experienceData = [
+const experienceData: TInfoCard[] = [
   {
     title: "Western Governors University",
     subtitle: "Bachelor of Science: Software Development",

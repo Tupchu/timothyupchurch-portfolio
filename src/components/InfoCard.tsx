@@ -1,8 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
+import { TInfoCard } from "../types";
 
-const InfoCard = ({ item }: any) => {
+type InfoCardProps = {
+  item: TInfoCard;
+};
+
+const InfoCard = ({ item }: InfoCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
