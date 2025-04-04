@@ -9,6 +9,7 @@ type ProjectCardProps = {
   tech?: string[];
   link: string;
   sourceCode?: string;
+  id: number;
 };
 
 const ProjectCard = ({
@@ -19,13 +20,14 @@ const ProjectCard = ({
   tech,
   link,
   sourceCode,
+  id,
 }: ProjectCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.4, delay: id * 0.6 }}
       className="border border-gray-200 rounded-xl overflow-hidden shadow-md flex-1"
     >
       <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 pt-4 pb-4 cursor-pointer">
