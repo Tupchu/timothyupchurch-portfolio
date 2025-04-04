@@ -1,22 +1,23 @@
 import ProjectCard from "../components/ProjectCard";
-import reactcinemaImg from "../assets/images/reactcinema.png";
+import reactcinemaImg from "../assets/images/reactcinema.svg";
+import coffeeshopImg from "../assets/images/coffeeshop.svg";
 
 const projectData = [
   {
-    title: "Coffee Shop App",
-    description: "Mobile ordering app for a local coffee shop.",
+    title: "Reactcinema",
+    description: "",
     image: reactcinemaImg,
     details:
       "Built with React Native, Expo, Supabase, and Square. Focused on creating a fast and frictionless ordering experience.",
-    tech: ["React Native", "TypeScript", "Supabase", "Square"],
+    tech: ["React", "TypeScript", "Clerk", "React Query", "One more"],
   },
   {
-    title: "DiscVault",
-    description: "Virtual disc golf bag + inventory manager.",
-    image: "/images/discvault.png",
+    title: "Coffee Shop",
+    description: "",
+    image: coffeeshopImg,
     details:
-      "Lets disc golfers organize their collection, share their bags, and monetize via affiliate links.",
-    tech: ["React Native", "Expo", "TypeScript"],
+      "Built with React Native, Expo, and TypeScript. Focused on creating a fast and frictionless ordering experience.",
+    tech: ["React Native", "Expo", "TypeScript", "Supabase", "Square"],
   },
 ];
 
@@ -27,13 +28,9 @@ const Projects = () => {
         PROJECTS
       </h2>
 
-      <div className="md:flex gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         {projectData.map((project, i) => (
-          <ProjectCard
-            key={project.title}
-            {...project}
-            defaultOpen={i === 0} // First one is expanded
-          />
+          <ProjectCard key={i} {...project} />
         ))}
       </div>
     </section>

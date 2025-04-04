@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
+import Badge from "./Badge";
 
 type ProjectCardProps = {
   title: string;
@@ -17,10 +16,7 @@ const ProjectCard = ({
   image,
   details,
   tech,
-  defaultOpen = false,
 }: ProjectCardProps) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -29,51 +25,27 @@ const ProjectCard = ({
       transition={{ duration: 0.4 }}
       className="border border-gray-200 rounded-xl overflow-hidden shadow-md flex-1"
     >
-      <img src={image} alt={title} className="w-full h-60 bg-auto" />
+      <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 pt-4 pb-4">
+        <img src={image} alt={title} className="w-full h-50 bg-auto mt-4" />
+      </div>
 
-      <div className="p-6 space-y-3">
-        <div
-          className="flex justify-between items-center cursor-pointer"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <div>
+      <div className="flex-row p-6 space-y-3 content-between">
+        <div className="cursor-pointer">
+          <div className="flex justify-between items-center ">
             <h3 className="text-xl font-semibold">{title}</h3>
             <p className="text-gray-600">{description}</p>
           </div>
-          <motion.div
-            animate={{ rotate: isOpen ? 180 : 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <ChevronDown />
-          </motion.div>
+
+          {tech && tech.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-2">
+              {tech.map((t, i) => (
+                <Badge key={i} label={t} size="sm" />
+              ))}
+            </div>
+          )}
         </div>
 
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="text-sm text-gray-700 overflow-hidden space-y-3 pt-3"
-            >
-              {details && <p>{details}</p>}
-
-              {tech && tech.length > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  {tech.map((t, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-700"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <p className="text-sm text-gray-700 content-end">{details}</p>
       </div>
     </motion.div>
   );
