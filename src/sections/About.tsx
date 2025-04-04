@@ -22,9 +22,9 @@ const About = () => {
       <br />
       <p className="text-gray-700 leading-relaxed text-base md:text-lg">
         Outside of work, I’m probably throwing discs at trees (disc golf),
-        building side projects, or exploring new tech stacks. I enjoy
-        collaborating with small businesses, freelancers, and creators to bring
-        ideas to life on the web.
+        building side projects, or exploring new tech stacks. I'm most fulfilled
+        when I'm solving real problems, creating value for others, and learning
+        something new.
       </p>
     </motion.section>
   );

@@ -1,4 +1,5 @@
 import About from "../sections/About";
+import Contact from "../sections/Contact";
 import Education from "../sections/Education";
 import Experience from "../sections/Experience";
 import Skills from "../sections/Skills";
@@ -10,6 +11,7 @@ const MainContent = () => {
       <Skills />
       <Experience />
       <Education />
+      <Contact />
     </div>
   );
 };

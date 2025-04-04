@@ -16,10 +16,17 @@ const Sidebar = () => {
           <h1 className="text-2xl font-bold">Hello, I’m Timothy</h1>
           <p className="text-sm text-gray-600">Front-End Developer</p>
 
-          <div className="flex items-center space-x-2 w4-0 inline-block border-solid border rounded-lg px-2 py-1 border-gray-300">
-            <span className="h-3 w-3 bg-green-500 rounded-full"></span>
+          <div className="inline-flex items-center space-x-2 border border-gray-300 rounded-lg px-2 py-1">
+            {/* Animated dot */}
+            <div className="relative h-3 w-3 inline-flex">
+              <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
+              <span className="inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </div>
+
+            {/* Text */}
             <span className="text-sm">Available for work</span>
           </div>
+
           <div className="flex gap-2">
             <MapPin />
             <p>Mascoutah, IL</p>
@@ -28,10 +35,12 @@ const Sidebar = () => {
 
         {/* contact card */}
         <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1">
-          <div className="text-sm space-y-1">
+          <div className="text-sm space-y-2">
             <div className="flex gap-2">
               <Globe />
-              <p>Timothyupchurch.com</p>
+              <a href="https://www.linkedin.com/in/timothy-upchurch-61a108217/">
+                TimothyUpchurch.com
+              </a>
             </div>
             <div className="flex gap-2">
               <Smartphone />
@@ -44,10 +53,10 @@ const Sidebar = () => {
           </div>
 
           <div className="space-y-2">
-            <button className="w-full bg-black text-white py-2 rounded-md">
+            <button className="w-full border border-black py-2 rounded-md cursor-pointer">
               Download CV
             </button>
-            <button className="w-full border border-black py-2 rounded-md">
+            <button className="w-full bg-black text-white py-2 rounded-md cursor-pointer hover:bg-black/80">
               Contact Me
             </button>
           </div>
