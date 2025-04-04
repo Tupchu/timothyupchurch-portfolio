@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Badge from "../components/Badge";
 
 // Optional: could be moved to /data/skills.js if you want it reusable
 const skills = [
@@ -34,12 +35,8 @@ const Skills = () => {
 
       <div className="flex flex-wrap gap-3">
         {skills.map((skill, index) => (
-          <motion.span
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            className="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-800 shadow-sm transition-all cursor-default"
-          >
-            {skill}
+          <motion.span key={index} whileHover={{ scale: 1.05 }}>
+            <Badge label={skill} />
           </motion.span>
         ))}
       </div>
