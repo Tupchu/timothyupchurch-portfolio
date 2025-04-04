@@ -7,7 +7,8 @@ type ProjectCardProps = {
   image: string;
   details?: string;
   tech?: string[];
-  defaultOpen?: boolean;
+  link: string;
+  sourceCode?: string;
 };
 
 const ProjectCard = ({
@@ -16,6 +17,8 @@ const ProjectCard = ({
   image,
   details,
   tech,
+  link,
+  sourceCode,
 }: ProjectCardProps) => {
   return (
     <motion.div
@@ -25,12 +28,14 @@ const ProjectCard = ({
       transition={{ duration: 0.4 }}
       className="border border-gray-200 rounded-xl overflow-hidden shadow-md flex-1"
     >
-      <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 pt-4 pb-4">
-        <img src={image} alt={title} className="w-full h-50 bg-auto mt-4" />
+      <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 pt-4 pb-4 cursor-pointer">
+        <a href={link} target="_blank" rel="noreferrer">
+          <img src={image} alt={title} className="w-full h-50 bg-auto mt-4" />
+        </a>
       </div>
 
       <div className="flex-row p-6 space-y-3 content-between">
-        <div className="cursor-pointer">
+        <div>
           <div className="flex justify-between items-center ">
             <h3 className="text-xl font-semibold">{title}</h3>
             <p className="text-gray-600">{description}</p>
@@ -45,7 +50,30 @@ const ProjectCard = ({
           )}
         </div>
 
-        <p className="text-sm text-gray-700 content-end">{details}</p>
+        <p className="text-sm text-gray-700 mb-6 mt-6">{details}</p>
+
+        <div className="text-sm text-gray-700 flex gap-4 items-center">
+          <button className="border border-solid border-gray-300 rounded-lg px-2 py-1 cursor-pointer hover:border-gray-400 transition-all duration-300">
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex"
+            >
+              View Project
+            </a>
+          </button>
+          {sourceCode && (
+            <a
+              href={sourceCode}
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-8 decoration-gray-300 hover:decoration-gray-400 transition-all duration-300"
+            >
+              GitHub
+            </a>
+          )}
+        </div>
       </div>
     </motion.div>
   );

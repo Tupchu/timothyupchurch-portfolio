@@ -4,12 +4,14 @@ import coffeeshopImg from "../assets/images/coffeeshop.svg";
 
 const projectData = [
   {
-    title: "Reactcinema",
+    title: "React Cinema",
     description: "",
     image: reactcinemaImg,
     details:
       "Built with React Native, Expo, Supabase, and Square. Focused on creating a fast and frictionless ordering experience.",
     tech: ["React", "TypeScript", "Clerk", "React Query", "One more"],
+    link: "https://reactcinema.com",
+    sourceCode: "https://github.com/Tupchu/timothyupchurch-portfolio",
   },
   {
     title: "Coffee Shop",
@@ -18,6 +20,7 @@ const projectData = [
     details:
       "Built with React Native, Expo, and TypeScript. Focused on creating a fast and frictionless ordering experience.",
     tech: ["React Native", "Expo", "TypeScript", "Supabase", "Square"],
+    link: "https://figma.com",
   },
 ];
 
