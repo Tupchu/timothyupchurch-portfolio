@@ -9,7 +9,7 @@ const projectData = [
     description: "",
     image: reactcinemaImg,
     details:
-      "Built with React Native, Expo, Supabase, and Square. Focused on creating a fast and frictionless ordering experience.",
+      "A minimalist movie search app built with React and the TMDb API. Features search-as-you-type functionality with debounce optimization for improved performance and reduced API calls. Includes Clerk authentication, React Query for efficient data fetching and caching, and React Hook Form for streamlined form handling.",
     tech: ["React", "React Hook Form", "React Query", "Clerk"],
     link: "https://reactcinema.com",
     sourceCode: "https://github.com/Tupchu/timothyupchurch-portfolio",
@@ -19,7 +19,7 @@ const projectData = [
     description: "",
     image: coffeeshopImg,
     details:
-      "Built with React Native, Expo, and TypeScript. Focused on creating a fast and frictionless ordering experience.",
+      "Mobile ordering app for a local coffee shop, built with React Native and Expo. The app features a categorized menu with dynamic product customization, real-time cart management, and support for pickup and delivery orders. Built with Supabase for authentication and data management, and integrated with Square for secure, in-app payments. Includes an internal admin panel for managing products, categories, and drink options.",
     tech: ["React Native", "Expo", "TypeScript", "Square", "Supabase"],
     link: "https://figma.com",
   },

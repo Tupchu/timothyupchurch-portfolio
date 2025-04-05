@@ -8,7 +8,7 @@ type InfoCardProps = {
 };
 
 const InfoCard = ({ item }: InfoCardProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(item.defaultOpen ?? false);
   return (
     <>
       <div

@@ -3,4 +3,5 @@ export type TInfoCard = {
   subtitle: string;
   date: string;
   details: string;
+  defaultOpen?: boolean;
 };
