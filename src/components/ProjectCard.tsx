@@ -56,16 +56,11 @@ const ProjectCard = ({
       </div>
 
       <div className="text-sm text-gray-700 flex gap-4 items-center mt-auto px-6 pb-6">
-        <button className="border border-solid border-gray-300 rounded-lg px-2 py-1 cursor-pointer hover:border-gray-400 transition-all duration-300">
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex"
-          >
+        <a href={link} target="_blank" rel="noreferrer" className="inline-flex">
+          <button className="border border-solid border-gray-300 rounded-lg px-3 py-2 cursor-pointer hover:border-gray-400 transition-all duration-300">
             View Project
-          </a>
-        </button>
+          </button>
+        </a>
         {sourceCode && (
           <a
             href={sourceCode}

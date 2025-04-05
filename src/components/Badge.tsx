@@ -8,7 +8,7 @@ const Badge = ({ label, size }: BadgeProps) => {
     <div
       className={`${
         size === "sm"
-          ? "px-3 py-1 text-xs text-gray-500"
+          ? "px-3 py-1 text-xs text-gray-600"
           : "px-4 py-2 text-sm text-gray-800"
       } bg-gray-100 rounded-full font-medium shadow-sm transition-all`}
     >
