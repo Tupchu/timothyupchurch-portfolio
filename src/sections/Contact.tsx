@@ -23,13 +23,8 @@ const Contact = () => {
         CONTACT
       </h2>
 
-      <form
-        data-netlify="true"
-        method="POST"
-        className="space-y-4"
-        name="contact"
-        action="/success"
-      >
+      <form method="POST" className="space-y-4" name="contact">
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <label
             className="block text-sm font-medium mb-2 text-gray-600"
@@ -80,8 +75,6 @@ const Contact = () => {
             className="w-full rounded-md px-3 py-4 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-black"
           />
         </div>
-
-        <input type="hidden" name="form-name" value="contact" />
 
         <button
           className="w-full bg-black text-white py-2 rounded-md cursor-pointer hover:bg-black/80 transition-all duration-300"
