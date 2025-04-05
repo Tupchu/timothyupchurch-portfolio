@@ -31,7 +31,7 @@ const Projects = () => {
       id="projects"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 0.4 }}
+      transition={{ duration: 1, delay: 0.25 }}
       viewport={{ once: true }}
       className="p-6 md:p-10 space-y-8"
     >

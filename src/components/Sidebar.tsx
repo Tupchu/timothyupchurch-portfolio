@@ -14,8 +14,9 @@ const Sidebar = () => {
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
+          transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
+          className="flex-1"
         >
           {/* profile card */}
           <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1">
@@ -43,8 +44,9 @@ const Sidebar = () => {
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 1.2, delay: 0.4 }}
           viewport={{ once: true }}
+          className="flex-1"
         >
           {/* contact card */}
           <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1">
