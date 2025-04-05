@@ -10,12 +10,6 @@ const Contact = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // TODO: hook up EmailJS or Formspree
-    console.log("Submitted:", form);
-  };
-
   return (
     <motion.section
       id="contact"
@@ -29,7 +23,7 @@ const Contact = () => {
         CONTACT
       </h2>
 
-      <form data-netlify="true" onSubmit={handleSubmit} className="space-y-4">
+      <form data-netlify="true" className="space-y-4">
         <div>
           <label
             className="block text-sm font-medium mb-2 text-gray-600"
