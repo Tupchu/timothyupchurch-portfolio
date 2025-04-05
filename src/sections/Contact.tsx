@@ -28,6 +28,7 @@ const Contact = () => {
         method="POST"
         className="space-y-4"
         name="contact"
+        action="/success"
       >
         <div>
           <label
