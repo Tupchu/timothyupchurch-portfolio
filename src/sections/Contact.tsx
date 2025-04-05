@@ -80,6 +80,8 @@ const Contact = () => {
           />
         </div>
 
+        <input type="hidden" name="form-name" value="contact" />
+
         <button
           className="w-full bg-black text-white py-2 rounded-md cursor-pointer hover:bg-black/80 transition-all duration-300"
           type="submit"
