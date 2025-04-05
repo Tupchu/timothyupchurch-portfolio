@@ -30,9 +30,9 @@ const ProjectCard = ({
       transition={{ duration: id + 1 - 0.8, delay: id * 0.25 }}
       className="flex flex-col border border-gray-200 rounded-xl overflow-hidden shadow-md flex-1"
     >
-      <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 pt-4 pb-4 cursor-pointer">
+      <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 pt-4 pb-4 cursor-pointer flex justify-center">
         <a href={link} target="_blank" rel="noreferrer">
-          <img src={image} alt={title} className="w-full h-50 bg-auto mt-4" />
+          <img src={image} alt={title} className="h-50 bg-auto mt-4" />
         </a>
       </div>
 

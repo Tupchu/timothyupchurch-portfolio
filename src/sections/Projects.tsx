@@ -5,7 +5,7 @@ const projectData = [
   {
     title: "React Cinema",
     description: "",
-    image: "/images/reactcinema.svg",
+    image: "/images/reactcinema.webp",
     details:
       "A minimalist movie search app built with React and the TMDb API. Features search-as-you-type functionality with debounce optimization for improved performance and reduced API calls. Includes Clerk authentication, React Query for efficient data fetching and caching, and React Hook Form for streamlined form handling.",
     tech: ["React", "React Hook Form", "React Query", "Clerk"],
@@ -15,7 +15,7 @@ const projectData = [
   {
     title: "Coffee Shop",
     description: "",
-    image: "/images/coffeeshop.svg",
+    image: "/images/coffeeshop.webp",
     details:
       "Mobile ordering app for a local coffee shop, built with React Native and Expo. The app features a categorized menu with dynamic product customization, real-time cart management, and support for pickup and delivery orders. Built with Supabase for authentication and data management, and integrated with Square for secure, in-app payments. Includes an internal admin panel for managing products, categories, and drink options.",
     tech: ["React Native", "Expo", "TypeScript", "Square", "Supabase"],
