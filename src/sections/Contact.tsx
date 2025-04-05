@@ -23,7 +23,12 @@ const Contact = () => {
         CONTACT
       </h2>
 
-      <form data-netlify="true" method="POST" className="space-y-4">
+      <form
+        data-netlify="true"
+        method="POST"
+        className="space-y-4"
+        name="contact"
+      >
         <div>
           <label
             className="block text-sm font-medium mb-2 text-gray-600"
