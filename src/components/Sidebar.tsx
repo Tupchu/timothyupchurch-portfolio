@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div className="grid gap-4 lg:grid-cols-1 md:max-lg:flex">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
           className="flex-1"
@@ -53,7 +53,11 @@ const Sidebar = () => {
             <div className="text-sm space-y-2">
               <div className="flex gap-2">
                 <Globe />
-                <a href="https://www.linkedin.com/in/timothy-upchurch-61a108217/">
+                <a
+                  href="https://www.linkedin.com/in/timothy-upchurch-61a108217/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Linkedin
                 </a>
               </div>
@@ -68,9 +72,17 @@ const Sidebar = () => {
             </div>
 
             <div className="space-y-2">
-              <button className="w-full border border-gray-300 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all duration-300">
-                Download CV
-              </button>
+              <a
+                href="/TimothyUpchurch_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                <button className="w-full border border-gray-300 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all duration-300">
+                  Download CV
+                </button>
+              </a>
+
               <a href="#contact">
                 <button className="w-full bg-black text-white py-2 rounded-md cursor-pointer hover:bg-black/80 transition-all duration-300">
                   Contact Me
