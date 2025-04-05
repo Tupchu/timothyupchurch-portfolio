@@ -52,7 +52,7 @@ const Sidebar = () => {
               <div className="flex gap-2">
                 <Globe />
                 <a href="https://www.linkedin.com/in/timothy-upchurch-61a108217/">
-                  TimothyUpchurch.com
+                  Linkedin
                 </a>
               </div>
               <div className="flex gap-2">
@@ -61,7 +61,7 @@ const Sidebar = () => {
               </div>
               <div className="flex gap-2">
                 <Mail />
-                <p>timmyupc@gmail.com</p>
+                <a href="mailto:timmyupc@gmail.com">timmyupc@gmail.com</a>
               </div>
             </div>
 

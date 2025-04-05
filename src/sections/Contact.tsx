@@ -29,7 +29,7 @@ const Contact = () => {
         CONTACT
       </h2>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form data-netlify="true" onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label
             className="block text-sm font-medium mb-2 text-gray-600"

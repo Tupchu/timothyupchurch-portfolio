@@ -10,7 +10,7 @@ const projectData = [
     image: reactcinemaImg,
     details:
       "Built with React Native, Expo, Supabase, and Square. Focused on creating a fast and frictionless ordering experience.",
-    tech: ["React", "Clerk", "React Query", "React Hook Form"],
+    tech: ["React", "React Hook Form", "React Query", "Clerk"],
     link: "https://reactcinema.com",
     sourceCode: "https://github.com/Tupchu/timothyupchurch-portfolio",
   },
@@ -20,7 +20,7 @@ const projectData = [
     image: coffeeshopImg,
     details:
       "Built with React Native, Expo, and TypeScript. Focused on creating a fast and frictionless ordering experience.",
-    tech: ["React Native", "Expo", "TypeScript", "Supabase", "Square"],
+    tech: ["React Native", "Expo", "TypeScript", "Square", "Supabase"],
     link: "https://figma.com",
   },
 ];
