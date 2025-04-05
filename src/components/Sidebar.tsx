@@ -70,7 +70,7 @@ const Sidebar = () => {
                 Download CV
               </button>
               <button className="w-full bg-black text-white py-2 rounded-md cursor-pointer hover:bg-black/80 transition-all duration-300">
-                Contact Me
+                <a href="#contact">Contact Me</a>
               </button>
             </div>
           </div>

@@ -21,7 +21,7 @@ const projectData = [
     details:
       "Mobile ordering app for a local coffee shop, built with React Native and Expo. The app features a categorized menu with dynamic product customization, real-time cart management, and support for pickup and delivery orders. Built with Supabase for authentication and data management, and integrated with Square for secure, in-app payments. Includes an internal admin panel for managing products, categories, and drink options.",
     tech: ["React Native", "Expo", "TypeScript", "Square", "Supabase"],
-    link: "https://figma.com",
+    link: "https://www.figma.com/design/6h0T1POhZnauggk19bs8w2/Coffee-Shop-App-Design?node-id=0-1&t=HUcTC01BcMq5v9bm-1",
   },
 ];
 
