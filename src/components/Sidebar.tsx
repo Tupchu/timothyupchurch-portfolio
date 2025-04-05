@@ -77,13 +77,14 @@ const Sidebar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 download
+                className="block"
               >
                 <button className="w-full border border-gray-300 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all duration-300">
                   Download CV
                 </button>
               </a>
 
-              <a href="#contact">
+              <a href="#contact" className="block">
                 <button className="w-full bg-black text-white py-2 rounded-md cursor-pointer hover:bg-black/80 transition-all duration-300">
                   Contact Me
                 </button>
