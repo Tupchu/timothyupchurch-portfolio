@@ -39,7 +39,7 @@ const Contact = () => {
             value={form.name}
             onChange={handleChange}
             required
-            className="w-full rounded-md px-3 py-4 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-black dark:border dark:border-gray-800 dark:focus:ring-gray-800"
+            className="w-full rounded-md px-3 py-4 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-black dark:border dark:border-gray-800 dark:focus:ring-gray-800 dark:bg-transparent"
           />
         </div>
 
@@ -57,7 +57,7 @@ const Contact = () => {
             value={form.email}
             onChange={handleChange}
             required
-            className="w-full rounded-md px-3 py-4 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-black dark:border dark:border-gray-800 dark:focus:ring-gray-800"
+            className="w-full rounded-md px-3 py-4 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-black dark:border dark:border-gray-800 dark:focus:ring-gray-800 dark:bg-transparent"
           />
         </div>
 
@@ -75,7 +75,7 @@ const Contact = () => {
             value={form.message}
             onChange={handleChange}
             required
-            className="w-full rounded-md px-3 py-4 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-black dark:border dark:border-gray-800 dark:focus:ring-gray-800"
+            className="w-full rounded-md px-3 py-4 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-black dark:border dark:border-gray-800 dark:focus:ring-gray-800 dark:bg-transparent"
           />
         </div>
 

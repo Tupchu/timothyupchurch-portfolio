@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Globe, Mail, MapPin, Smartphone } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Sidebar = () => {
   return (
@@ -94,6 +95,8 @@ const Sidebar = () => {
             </div>
           </div>
         </motion.div>
+
+        <ThemeToggle />
       </div>
     </motion.section>
   );

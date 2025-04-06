@@ -4,7 +4,7 @@ import Footer from "../sections/Footer";
 
 const Layout = () => {
   return (
-    <div className="min-h-screen bg-gray-100 text-black pt-8 dark:bg-gray-900 dark:text-gray-300">
+    <div className="min-h-screen bg-gray-100 text-black pt-8 dark:bg-gray-900 dark:text-gray-300 ">
       {/* Container centers the layout and adds gutter on both sides */}
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 px-4 lg:px-0">
         {/* Sidebar */}

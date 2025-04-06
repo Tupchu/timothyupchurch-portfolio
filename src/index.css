@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,4 +18,8 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  @apply transition-colors duration-300;
 }
