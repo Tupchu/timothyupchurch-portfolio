@@ -30,7 +30,7 @@ const Experience = () => {
       viewport={{ once: true }}
       className="p-6 md:p-10"
     >
-      <h2 className="text-base font-semibold mb-8 inline-block border-solid border rounded-lg px-2 py-1 border-gray-300">
+      <h2 className="text-base font-semibold mb-8 inline-block border-solid border rounded-lg px-2 py-1 border-gray-300 dark:border-gray-600">
         EXPERIENCE
       </h2>
 

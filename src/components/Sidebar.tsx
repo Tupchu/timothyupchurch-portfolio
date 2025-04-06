@@ -19,11 +19,13 @@ const Sidebar = () => {
           className="flex-1"
         >
           {/* profile card */}
-          <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1">
+          <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1 dark:bg-gray-700 dark:text-gray-300">
             <h1 className="text-2xl font-bold">Hello, I’m Timothy</h1>
-            <p className="text-sm text-gray-600">Front-End Developer</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Front-End Developer
+            </p>
 
-            <div className="inline-flex items-center space-x-2 border border-gray-300 rounded-lg px-2 py-1">
+            <div className="inline-flex items-center space-x-2 border border-gray-300 rounded-lg px-2 py-1 dark:border-gray-600">
               {/* Animated dot */}
               <div className="relative h-3 w-3 inline-flex">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
@@ -49,7 +51,7 @@ const Sidebar = () => {
           className="flex-1"
         >
           {/* contact card */}
-          <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1">
+          <div className="bg-white p-6 rounded-xl shadow-md space-y-4 md:max-lg:flex-1 dark:bg-gray-700 dark:text-gray-300">
             <div className="text-sm space-y-2">
               <div className="flex gap-2">
                 <Globe />
@@ -79,13 +81,13 @@ const Sidebar = () => {
                 download
                 className="block"
               >
-                <button className="w-full border border-gray-300 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all duration-300">
+                <button className="w-full border border-gray-300 dark:border-gray-600 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all duration-300 dark:hover:bg-gray-600">
                   Download CV
                 </button>
               </a>
 
               <a href="#contact" className="block">
-                <button className="w-full bg-black text-white py-2 rounded-md cursor-pointer hover:bg-black/80 transition-all duration-300">
+                <button className="w-full bg-black dark:bg-gray-800 text-white dark:text-gray-300 py-2 rounded-md cursor-pointer hover:bg-black/80 dark:hover:bg-gray-600 transition-all duration-300">
                   Contact Me
                 </button>
               </a>

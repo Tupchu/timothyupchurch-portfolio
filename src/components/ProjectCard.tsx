@@ -28,9 +28,9 @@ const ProjectCard = ({
       animate={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: id + 1 - 0.8, delay: id * 0.25 }}
-      className="flex flex-col border border-gray-200 rounded-xl overflow-hidden shadow-md flex-1"
+      className="flex flex-col border border-gray-200 dark:border-gray-600 rounded-xl overflow-hidden shadow-md flex-1"
     >
-      <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 pt-4 pb-4 cursor-pointer flex justify-center">
+      <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 dark:bg-gradient-to-r dark:from-gray-800  dark:to-gray-900 pt-4 pb-4 cursor-pointer flex justify-center">
         <a href={link} target="_blank" rel="noreferrer">
           <img src={image} alt={title} className="h-50 bg-auto mt-4" />
         </a>
@@ -40,7 +40,7 @@ const ProjectCard = ({
         <div>
           <div className="flex justify-between items-center ">
             <h3 className="text-xl font-semibold">{title}</h3>
-            <p className="text-gray-600">{description}</p>
+            <p className="text-gray-600 dark:text-gray-300">{description}</p>
           </div>
 
           {tech && tech.length > 0 && (
@@ -52,12 +52,14 @@ const ProjectCard = ({
           )}
         </div>
 
-        <p className="text-sm text-gray-700 mb-6 mt-6">{details}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 mt-6">
+          {details}
+        </p>
       </div>
 
       <div className="text-sm text-gray-700 flex gap-4 items-center mt-auto px-6 pb-6">
         <a href={link} target="_blank" rel="noreferrer" className="inline-flex">
-          <button className="border border-solid border-gray-300 rounded-lg px-3 py-2 cursor-pointer hover:border-gray-400 transition-all duration-300">
+          <button className="border border-solid border-gray-300 dark:border-gray-600 dark:text-gray-300 rounded-lg px-3 py-2 cursor-pointer hover:border-gray-400 transition-all duration-300">
             View Project
           </button>
         </a>
@@ -66,7 +68,7 @@ const ProjectCard = ({
             href={sourceCode}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-gray-400 transition-all duration-300"
+            className="hover:text-gray-400 transition-all duration-300 dark:text-gray-300"
           >
             GitHub
           </a>

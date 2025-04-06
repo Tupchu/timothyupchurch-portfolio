@@ -12,7 +12,7 @@ const InfoCard = ({ item }: InfoCardProps) => {
   return (
     <>
       <div
-        className="cursor-pointer border border-dashed border-gray-300 rounded-lg p-4 hover:shadow-md transition"
+        className="cursor-pointer border border-dashed border-gray-300 rounded-lg p-4 hover:shadow-md transition dark:border-gray-600"
         onClick={() => {
           item.details !== "" && setIsOpen(!isOpen);
         }}
@@ -20,7 +20,9 @@ const InfoCard = ({ item }: InfoCardProps) => {
         <div className="flex justify-between items-center">
           <div>
             <h3 className="font-semibold text-lg">{item.title}</h3>
-            <p className="text-sm text-gray-600">{item.subtitle}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              {item.subtitle}
+            </p>
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-sm text-gray-500">{item.date}</span>
@@ -50,7 +52,9 @@ const InfoCard = ({ item }: InfoCardProps) => {
                 exit={{ opacity: 0, y: 0 }}
                 transition={{ duration: 0.15 }}
               >
-                <p className="text-gray-700 text-sm">{item.details}</p>
+                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                  {item.details}
+                </p>
               </motion.div>
             </motion.div>
           )}
