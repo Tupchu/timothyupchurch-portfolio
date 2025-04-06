@@ -10,7 +10,7 @@ const projectData = [
       "A minimalist movie search app built with React and the TMDb API. Features search-as-you-type functionality with debounce optimization for improved performance and reduced API calls. Includes Clerk authentication, React Query for efficient data fetching and caching, and React Hook Form for streamlined form handling.",
     tech: ["React", "React Hook Form", "React Query", "Clerk"],
     link: "https://reactcinema.com",
-    sourceCode: "https://github.com/Tupchu/timothyupchurch-portfolio",
+    sourceCode: "https://github.com/Tupchu/ReactCinema",
   },
   {
     title: "Coffee Shop",
