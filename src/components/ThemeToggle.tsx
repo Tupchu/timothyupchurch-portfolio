@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
