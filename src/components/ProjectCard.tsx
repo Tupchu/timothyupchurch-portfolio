@@ -28,7 +28,7 @@ const ProjectCard = ({
       animate={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: id + 1 - 0.8, delay: id * 0.25 }}
-      className="flex flex-col border border-gray-200 dark:border-gray-600 rounded-xl overflow-hidden shadow-md flex-1"
+      className="flex flex-col border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden shadow-md flex-1"
     >
       <div className="bg-gradient-to-r from-neutral-200 to-neutral-100 dark:bg-gradient-to-r dark:from-gray-800  dark:to-gray-900 pt-4 pb-4 cursor-pointer flex justify-center">
         <a href={link} target="_blank" rel="noreferrer">
