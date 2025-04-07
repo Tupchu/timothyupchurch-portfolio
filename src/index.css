@@ -23,3 +23,8 @@ html {
 * {
   @apply transition-[background-color,border-color] duration-700;
 }
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
